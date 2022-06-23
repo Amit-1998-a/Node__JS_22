@@ -1,0 +1,83 @@
+Install package.json dependencies
+npm install
+
+Shorthand
+# install
+npm i <package>
+
+# uninstall
+npm un <package>
+
+# update
+npm up <package>
+Flags
+-S is the same as --save, and -D is the same as --save-dev.
+
+List globally installed packages
+npm list -g --depth=0
+Uninstall global package
+npm -g uninstall <name> 
+Upgrade npm on Windows
+npm-windows-upgrade
+Update global packages
+To see which packages need updating, use:
+
+npm outdated -g --depth=0
+To update global packages individually you can use:
+
+npm update -g <package> <package> <package>
+list available scripts to run
+npm run
+Update npm
+npm install -g npm@latest
+
+# using windows? Then use
+npm-windows-upgrade
+Installed version
+npm list # for local packages
+-----------------------------------------------------------------
+node js
+-------------------------------------------------------------------------------------
+a platform which allow us to run javascript on computer/server
+
+read , delete , and update files
+
+easily communicate with database 
+
+-------------------------------------
+why 
+
+it uses javascript
+very fast v8 engine non blocking code
+huge ecosystme of open source packages(npm)
+great for real time servies (like chats)
+
+
+--------------------
+java script engine
+
+
+computer do not under java script
+a java script engine takes java script and convert it into something it does understand - machine code
+
+
+-------------------------------------
+require() is a built-in function to include external modules that exist in separate files.
+
+ require() statement basically reads a JavaScript file, executes it, and then proceeds to return the export objec
+
+
+---------------------------------
+
+object.unlink ('filename')--to delete the file
+----------------------------------------------------------
+Clients and servers---
+
+------behinde scencs-----
+--> when we browse the website 
+
+browser send the request to server then the server wiil handle that request and send a response client which will update proably 
+
+how they communicate we eachh other
+
+--> f
