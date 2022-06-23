@@ -13,6 +13,4 @@ module.exports={
     counter:counter,
     adder:adder,
     pi:pi
-
-
 };
