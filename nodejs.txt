@@ -109,6 +109,7 @@ buffers
 ------> transfer small chunks of data at a time
 
 streams------streams are objects that let you read data from a source or write data to a destination in continuous fashion.
+
 ---> can create strams in node.js to transfer data
 ----> increase performance.
 ------------------------
@@ -119,7 +120,32 @@ readable streams
 -----> duplex - can read and write to a stream.
 --------------------------------------------------
 
+pipes---
+->
 
+
+
+----------------------------
+the node package manager----
+--->to install express
+npm install express
+
+---------------------------------------
+nodemon
+----------->>nodemon is a tool that helps develop Node.js based applications by automatically restarting the node application when file changes in the directory are detected.
+
+nodemon does not require any additional changes to your code or method of development. nodemon is a replacement wrapper for node. To use nodemon, replace the word node on the command line when executing your script.
+
+npm install -g nodemon # or using yarn: yarn global add nodemon
+
+
+----------------------------------------------------------------------------------------------------------------------------
+
+EXPRESS
+----------------
+-> Easy and flexible routing system
+-> integrates with many templating engines
+-> Contains a middleware framework
 
 
 

@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  }, 
+  },
   "keywords": [],
   "author": "Amit",
   "license": "DIEMS",
   "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
