@@ -59,7 +59,9 @@ java script engine
 
 computer do not under java script
 a java script engine takes java script and convert it into something it does understand - machine code
+-----------------------------------------------------------------------------------------------------------------------------
 
+Day-2
 
 -------------------------------------
 require() is a built-in function to include external modules that exist in separate files.
@@ -68,16 +70,56 @@ require() is a built-in function to include external modules that exist in separ
 
 
 ---------------------------------
+blocking & non - blocking
+
+--Blocking methods are executed synchronously. Synchronously means that the program is executed line by line.
+ The program waits until the called function or the operation returns.
+---------
+
+--Non-Blocking methods are executed asynchronously. Asynchronously means that the program may not necessarily execute line by line. 
+The program calls the function and move to the next operation and does not wait for it to return.
+
+-------------------------------------------------------------------------------------------------------------------------
 
 object.unlink ('filename')--to delete the file
+
 ----------------------------------------------------------
 Clients and servers---
 
 ------behinde scencs-----
---> when we browse the website 
+--> when we  use browser the 
 
 browser send the request to server then the server wiil handle that request and send a response client which will update proably 
 
 how they communicate we eachh other
 
---> f
+--> port number
+
+a program running on a computer can listen for requests send to a particular port number.
+
+Response headers-
+-contentType-- browser knows what to expect whether that's going to be plain text , html ,json -
+actully we are telling about what we are providing 
+
+
+-----------------------
+buffers
+-----> Temporary storage spot for a chunk of data  that is being transferred from the one place to anther
+-----> the buffer is filled with data then passed along
+------> transfer small chunks of data at a time
+
+streams------streams are objects that let you read data from a source or write data to a destination in continuous fashion.
+---> can create strams in node.js to transfer data
+----> increase performance.
+------------------------
+
+readable streams
+---->writable strams-- allow node js to write data to a stream
+-----> readable streams-- allow node js to read data from a stream
+-----> duplex - can read and write to a stream.
+--------------------------------------------------
+
+
+
+
+
