@@ -6,3 +6,11 @@ Post requests
 -->Post is a request method
 --> post requests , ask the server to accpt/store data which is enclosed in the body of the request
 --> offen used when submitting form
+
+====================================
+
+NOSQL  Databases
+
+--> Alternative to SQL databases
+--> store documents (JSON) in a db , instead of tables with rows and columns
+---> Works really well with javaScript (and therefore NODE.js)
