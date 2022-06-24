@@ -1,7 +1,7 @@
 var express =  require ('express');
-var bodyParsar = require('body-parsar');
+var bodyParser = require('body-parser');
 var app = express()
-var urlencodedParsar = bodyParsar.urlencodedParsar({ extended:false })
+var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
 app.set('view engine', 'ejs');
 app.use('/assets', express.static('assets')); 
@@ -13,9 +13,9 @@ app.get('/', function(req, res){
 app.get('/contact', function(req, res){
     res.render('contact',{qs:req.query});
 });
-app.post('/contact',urlencodedParsar, function(req, res){
+app.post('/contact', urlencodedParser, function(req, res){
     console.log(req.body);
-    res.render('contact',{qs:req.query});
+    res.render('contact-sucess',{data: req.body});
 });
 
  app.get('/profile/:name', function(req,res){
