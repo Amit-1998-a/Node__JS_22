@@ -1,5 +1,5 @@
 var bodyParser = require('body-parser');
-var mongoose = require('mongoose');
+
 
 var data = [{item: 'get milk'},{item:'walk dog'},{item: 'kick some coding ass'}]
 

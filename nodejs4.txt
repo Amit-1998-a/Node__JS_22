@@ -1,0 +1,21 @@
+Day 4 
+-------------------------------------------------------------------------
+Mongoose
+--------------->
+mongoose is schema based solution to model your application data
+schema create key value pairs different data types.
+
+what does moongoose do ?
+
+mongoose to create an easy to use object refereence when interacting with mongoDB and what makes 
+mongoose great modeled within our code .
+
+var mongoose = require('mongoose');
+var schema = mogoose.Schema;
+var BookSchema = new Schema({
+title : String ,
+keywords : array ,
+published : Boolean 
+
+});
+module.exports = mongoose.model('book',BookSchema);
