@@ -1,6 +1,6 @@
 var fs = require('fs');
 var http = require('http');
-const { traceDeprecation } = require('process');
+
 
 var server = http.createServer(function(req,res){
     console.log('request was made'+ req.url);
