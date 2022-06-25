@@ -20,19 +20,20 @@ app.get('/', function(req ,res){
     res.send('happy to be here')
 });
 
-app.get('/books',function(req ,res){
+app.get('/books',(req,res)=>{
     console.log('getting all books');
     Book.find({})
-    .exec(function(err,books){
-        if(err){
-            res.send('error has occured');
-
-        }else{
-            console.log(books);
-            res.json(books);
-        }
+    .exec()
+    .then((books)=>{
+        console.log(books);
+        res.json(books);
+    })
+        .catch((err)=>{
+            res.send('error occred');
+        });
+    
     });
-});
+
 app.get('/books/:id',function(req ,res){
  console.log('getting one book');
  Book.findOne({
