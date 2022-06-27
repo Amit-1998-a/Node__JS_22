@@ -33,6 +33,7 @@ app.get('/books',function(req ,res){
         }
     });
 });
+
 app.get('/books/:id',function(req ,res){
  console.log('getting one book');
  Book.findOne({
@@ -67,7 +68,7 @@ app.post('/book',function(req,res){
 });
 
 app.post('/book2',function(req ,res){
-    Book.creat(req.body,function(err,body){
+    Book.create(req.body,function(err,body){
         if(err){
             res.send('error saving book');
         }else{
