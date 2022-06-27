@@ -7,7 +7,7 @@ var Book = require('./book.model');
 
 var db ='mongodb://localhost/example';
 
-//mongoose.Promise = global.Promise;
+
 mongoose.connect(db);
 
 app.use(bodyParser.json())
