@@ -32,9 +32,9 @@ app.get('/add', function(req, res,urlencoded) {
 app.post('/add', function(req, res,urlencoded) {
     console.log(req.body);
     const mybodydata = {
-        username: req.body.username,
-        useremail: req.body.useremail,
-        usermobile: req.body.usermobile
+        user_name: req.body.user_name,
+        user_email: req.body.user_email,
+        user_mobile: req.body.user_mobile
     }
     var data = User(mybodydata);
     data.save(function(err) {
