@@ -6,6 +6,7 @@ var mongoose=require('mongoose');
 mongoose.connect('mongodb://localhost/Node');
 
 var User=require('./user');
+const { Router } = require('express');
 app.set('view engine','ejs');
 
 app.use(bodyParser.urlencoded({extended:true}))
@@ -45,6 +46,37 @@ app.post('/add', function(req, res,urlencoded) {
         }
     })
 });
+
+
+//delete
+app.get('/display/:id', function(req,res){
+    console.log(req.params._id);
+    User.findOneAndRemove(req.params._id, function(err,user){
+        if(err){
+            console.log(err)
+        }else{
+            console.log('user');
+            res.status(204);
+        }
+
+    });
+});
+
+ 
+// app.delete('/book/:id',function(req, res){
+//     Book.findOneAndRemove({
+//         _id:req.params.id
+//     },function(err,book){
+//         if(err){
+//             res.send('error delting');
+
+//         }else{
+//             console.log('book')
+//             res.status(204);
+//         }
+//     })
+// })
+    
 
 
 
