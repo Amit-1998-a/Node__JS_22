@@ -1,32 +1,29 @@
-<% include('header');%>
+<%- include('header'); -%>
 
-<form action="" method="POST"></form>
-
+<form method="POST">
     <table>
-         <tr> 
-          <td>Name:</td>
-            <input type="text" placeholder="Enter Name" name="user_name" id="" required="">
+        <tr>
+            <td>Name : </td>
+            <td>
+                <input type="text" placeholder="Enter Name" name="username" required> </td>
         </tr>
-        
-        <tr> 
-            <td> Email:</td>
-              <input type="text" placeholder="Enter Email" name="user_email" id="" required="">
-          </tr>
-
-          <tr>
+        <tr>
+            <td> Email :</td>
+            <td>
+                <input type="text" placeholder="Enter Email" name="useremail" required>
+            </td>
+        </tr>
+        <tr>
             <td>Mobile :</td>
             <td>
                 <input type="text" placeholder="Enter Mobile" name="usermobile" required>
             </td>
-          </tr>
-          <tr>
+        </tr>
+        <tr>
             <td>
                 <input type="submit">
                   <input type="button" value="Display" onclick="window.location='display'">
             </td>
         </tr>
-          
-
-
-
     </table>
+</form>

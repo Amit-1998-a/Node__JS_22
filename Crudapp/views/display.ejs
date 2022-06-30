@@ -1,4 +1,4 @@
-<%- include('header'); -%>
+<%- include('header'); %>
 
 <% if(users.length>0) { %>
 <table border="1">
@@ -9,3 +9,21 @@
                 <th>Mobile</th>
                  <th>Action</th>
         </tr>
+   
+    <% for(var i=0; i<users.length;i++) { %>
+            <tr>
+              <td><%= i %></td>
+              <td><%= users[i].username %></td>
+              <td><%= users[i].useremail %></td>
+              <td><%= users[i].usermobile %></td>
+              <td>
+                      <a href='/edit/<%= users[i]._id %>'>Edit</a> | 
+                      <a href='/delete/<%= users[i]._id %>'>Delete</a> |
+                      <a href='/show/<%= users[i]._id %>'>Show</a>           
+            </td>
+            </tr>
+          <% } %> 
+</table>
+<% } else { %>
+    No Record Found
+  <% } %>
