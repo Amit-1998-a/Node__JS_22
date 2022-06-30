@@ -1,0 +1,63 @@
+
+Message List
+sclass test {     public static void main(s... by Sonavane, Amit
+Sonavane, Amit12:27
+sclass test {
+
+    public static void main(string args[])
+
+    ArraList<integer> arr = new Arraylist();
+    arr.add(1)
+    arr.add(2);
+
+arr.foreEach(n->System.out.println(n));
+arr.Foreach(n->{if (n%2==0) system.out.println(n));
+
+}
+----------------------------------------------------------------------------------------
+
+class test{
+
+ interface FuncInter1
+    {
+        int operation(int a, int b);
+    }
+
+public static void main(String args[])
+    {
+        FuncInter1 add = (int x, int y) -> x + y;
+
+    Test tobj = new Test();
+
+
+        System.out.println("Addition is " +
+                          tobj.operate(6, 3, add));
+
+        funinter1 add = (int a ,int b)-> 
+            a+b;
+-----------------------------------------------------------------------------------------------------------
+
+
+
+​
+public class Main {
+  public static void main(String[] args) {
+    ArrayList<Integer> numbers = new ArrayList<Integer>();
+    numbers.add(5);
+    numbers.add(9);
+    numbers.add(8);
+    numbers.add(1);
+    numbers.forEach( (n) -> { System.out.println(n); } );
+  }
+}
+​--------------------------------------------------------------------------------
+5
+9
+8
+1
+------------------------------------------------------------------------------------
+
+
+
+
+
